@@ -19,16 +19,27 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(NewX,transform.position.y, NewZ),Velocity*Time.deltaTime);
+        ActualPosition();
+        Animation();
+        if (Change) Movement();
+    }
+
+    private void Animation()
+    {
         if (NewX == transform.position.x && NewZ == transform.position.z)
         {
             Change = true;
             Anim.SetBool("Walk", false);
         }
         else Anim.SetBool("Walk", true);
-        if (Change) Movement();
     }
-    void NewPosition(int NewVertical, int NewHorizontal)
+
+    public virtual void ActualPosition()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(NewX, transform.position.y, NewZ), Velocity * Time.deltaTime);
+    }
+
+    public virtual void NewPosition( int NewVertical, int NewHorizontal)
     {
         foreach (var item in Terrains)
         {
