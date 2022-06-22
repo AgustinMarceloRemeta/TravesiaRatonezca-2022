@@ -9,11 +9,11 @@ public class Terrain : MonoBehaviour
     public int Vertical, Horizontal;
     void Start()
     {
-        position = transform.position;
+        position = this.transform.position;
     }
 
     void Update()
     {
-        
+       
     }
 }

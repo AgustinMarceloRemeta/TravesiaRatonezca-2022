@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3446939270826471901}
   - component: {fileID: 642447904398392557}
   - component: {fileID: 1756956989330675610}
+  - component: {fileID: -6381065779764527541}
   m_Layer: 0
   m_Name: Plain_Stone_06 (1)
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1000185128997709298}
   m_LocalRotation: {x: -1.7763564e-15, y: 1.5476974e-15, z: -0.0000003019916, w: 1}
   m_LocalPosition: {x: 1.96, y: -1.07, z: 0.49}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,3 +82,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-6381065779764527541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000185128997709298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61b24cdc2909224b904e5d24b55f844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Velocity: 2
+  MaxVertical: 0
+  MaxHorizontal: 0
+  ActualVertical: 0
+  ActualHorizontal: 0
+  Terrains: []
+  NewX: 0
+  NewZ: 0
+  terrain: {fileID: 0}
+  RaycastDistance: 0
