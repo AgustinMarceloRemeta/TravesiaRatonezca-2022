@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Terrain : MonoBehaviour
+public class Objetive : MonoBehaviour
 {
-    public bool occupied, box;
-    public Vector3 position;
-    public int Vertical, Horizontal;
-    void Start()
+   public bool Complete;
+    private void Start()
     {
-        position = this.transform.position;
+        
     }
-
     void Update()
     {
         Ray ray = new Ray(transform.position, Vector3.up);
@@ -20,11 +17,11 @@ public class Terrain : MonoBehaviour
         {
             if (hit.collider.GetComponent<Stone>() != null)
             {
-                box = true;
+                Complete = true;
             }
-            else box = false;
-        }
-        else box = false;
+            else Complete = false;
 
+        }
+        else Complete = false;
     }
 }

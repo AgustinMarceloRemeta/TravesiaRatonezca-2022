@@ -5,15 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float Velocity;
-    [SerializeField] int MaxVertical, MaxHorizontal, ActualVertical, ActualHorizontal;
-    [SerializeField] Terrain[] Terrains;
+    [SerializeField] protected int  ActualVertical, ActualHorizontal;
     [SerializeField] float NewX, NewZ;
+    protected GridManager gridManager;
      bool Change;
     Animator Anim;
 
     void Start()
     {
         Anim = GetComponent<Animator>();
+        gridManager = FindObjectOfType<GridManager>();
     }
 
 
@@ -41,7 +42,7 @@ public class Player : MonoBehaviour
 
     public virtual void NewPosition( int NewVertical, int NewHorizontal)
     {
-        foreach (var item in Terrains)
+        foreach (var item in gridManager.terrains)
         {
             if (NewHorizontal == item.Horizontal && NewVertical == item.Vertical)
             {
@@ -51,6 +52,7 @@ public class Player : MonoBehaviour
                     NewZ = item.position.z;
                     ActualHorizontal = NewHorizontal;
                     ActualVertical = NewVertical;
+                    Limits();
                 }
                 else print("Objeto ocupado");
             }
@@ -58,7 +60,8 @@ public class Player : MonoBehaviour
     }
     void Movement()
     {
-        int NewVertical= ActualVertical,NewHorizontal = ActualHorizontal;   
+        int NewVertical = ActualVertical, NewHorizontal = ActualHorizontal;
+
         if (Input.GetKeyDown("w"))
         {
             Change = false;
@@ -68,7 +71,7 @@ public class Player : MonoBehaviour
         else if (Input.GetKeyDown("s"))
         {
             Change = false;
-                NewVertical--;
+            NewVertical--;
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else if (Input.GetKeyDown("d"))
@@ -76,17 +79,23 @@ public class Player : MonoBehaviour
             Change = false;
             NewHorizontal++;
             transform.rotation = Quaternion.Euler(0, 90, 0);
-        }  
+        }
         else if (Input.GetKeyDown("a"))
         {
             Change = false;
             NewHorizontal--;
             transform.rotation = Quaternion.Euler(0, 270, 0);
         }
-        if (ActualHorizontal < -MaxHorizontal) ActualHorizontal = -MaxHorizontal;
-        if (ActualHorizontal > MaxHorizontal) ActualHorizontal = MaxHorizontal;
-        if (ActualVertical < -MaxVertical) ActualVertical = -MaxVertical;
-        if (ActualVertical > MaxVertical) ActualVertical = MaxVertical;
-        NewPosition(NewVertical,NewHorizontal);
+
+
+        NewPosition(NewVertical, NewHorizontal);
+    }
+
+    private void Limits()
+    {
+        if (ActualHorizontal < -gridManager.MaxHorizontal) ActualHorizontal = -gridManager.MaxHorizontal;
+        if (ActualHorizontal > gridManager.MaxHorizontal) ActualHorizontal = gridManager.MaxHorizontal;
+        if (ActualVertical < -gridManager.MaxVertical) ActualVertical = -gridManager.MaxVertical;
+        if (ActualVertical > gridManager.MaxVertical) ActualVertical = gridManager.MaxVertical;
     }
 }

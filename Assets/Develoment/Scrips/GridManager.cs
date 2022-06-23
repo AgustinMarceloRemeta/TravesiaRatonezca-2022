@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Terrain[] terrains;
+    public int MaxVertical, MaxHorizontal;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
