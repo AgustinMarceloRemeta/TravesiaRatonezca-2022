@@ -22,9 +22,18 @@ public class Terrain : MonoBehaviour
             {
                 box = true;
             }
-            else box = false;
-        }
-        else box = false;
+            else if (hit.collider.CompareTag("Obstacle")) 
+            {
+                occupied = true;
+                box = true;           
+            }
 
+            else box = false;       
+        }
+        else
+        {
+            box = false;
+            occupied = false;
+        }
     }
 }

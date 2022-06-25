@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9e9e724bb84a6904d86623f112105faf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Porky's
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 04b4825b45637d64bb06328d11bde32c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

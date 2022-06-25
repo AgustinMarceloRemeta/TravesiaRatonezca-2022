@@ -8,14 +8,20 @@ public class Stone : Player
     [SerializeField] float RaycastDistance;
     [SerializeField] LayerMask Layer;
 
-    bool Forward, Left, Right, Back;
+    bool Forward, Left, Right, Back, trigger;
 
+    public override void Awake()
+    {
+        base.Awake();
+    }
     void Start()
     {
+            trigger = true;
         gridManager = FindObjectOfType<GridManager>();
         NewTerrain();
+        InitList();
     }
-
+   
     private void NewTerrain()
     {
         foreach (var item in gridManager.terrains)
@@ -41,7 +47,7 @@ public class Stone : Player
 
         if (Forward)
         {
-            if (IsOcuped(ActualVertical - 2, ActualHorizontal)) terrain.occupied = true;
+            if (IsOcuped(ActualVertical - 1, ActualHorizontal)) terrain.occupied = true;
             else terrain.occupied = false;
         }
         else if (Back)
@@ -87,8 +93,34 @@ public class Stone : Player
     {
         if(other.GetComponent<Player>() != null)
         {
-            Move();
-            NewTerrain();
+            if (trigger)
+            {
+                Move();
+
+                NewTerrain();
+            }
+            trigger = false;
+           
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<Player>() != null)
+        {
+            trigger = true;
+
+        }
+    }
+    public override void OnDisable()
+    {
+        base.OnDisable();
+        GameManager.Back -= NewTerrain;
+    }
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        GameManager.Back += NewTerrain;
+
+    }
+
 }

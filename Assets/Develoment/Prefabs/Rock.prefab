@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 642447904398392557}
   - component: {fileID: 1756956989330675610}
   - component: {fileID: -6381065779764527541}
+  - component: {fileID: 1916309988383987551}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -99,8 +100,23 @@ MonoBehaviour:
   ActualHorizontal: 0
   NewX: 0
   NewZ: 0
+  ExPositions: []
+  IsPlayer: 0
   terrain: {fileID: 0}
   RaycastDistance: 3
   Layer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!65 &1916309988383987551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000185128997709298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59858906, y: 0.4803351, z: 0.83529776}
+  m_Center: {x: -0.01729084, y: 0.24016787, z: 0.11606582}
