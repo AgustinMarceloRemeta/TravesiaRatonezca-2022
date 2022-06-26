@@ -31,6 +31,6 @@ public class Sound : MonoBehaviour
     
     void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 4) Destroy(this.gameObject);  
+        if (FindObjectOfType<ManagerMenu>()!= null) Destroy(this.gameObject);  
     }
 }
