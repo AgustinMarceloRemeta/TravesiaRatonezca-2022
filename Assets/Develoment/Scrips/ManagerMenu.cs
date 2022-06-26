@@ -22,4 +22,8 @@ public class ManagerMenu : MonoBehaviour
         Application.Quit();
         print("Sali");
     }
+    public void Menu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }
