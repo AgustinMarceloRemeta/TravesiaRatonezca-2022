@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
     {
         int NewVertical = ActualVertical, NewHorizontal = ActualHorizontal;
 
-        if (Input.GetKeyDown("w"))
+        if (Input.GetKey("w"))
         {
             Change = false;
             NewVertical++;
@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
            // SavePos?.Invoke();
             NewPosition(NewVertical, NewHorizontal);
         }
-        else if (Input.GetKeyDown("s"))
+        else if (Input.GetKey("s"))
         {
             Change = false;
             NewVertical--;
@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
            // SavePos?.Invoke();
             NewPosition(NewVertical, NewHorizontal);
         }
-        else if (Input.GetKeyDown("d"))
+        else if (Input.GetKey("d"))
         {
             Change = false;
             NewHorizontal++;
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour
          //   SavePos?.Invoke();
             NewPosition(NewVertical, NewHorizontal);
         }
-        else if (Input.GetKeyDown("a"))
+        else if (Input.GetKey("a"))
         {
             Change = false;
             NewHorizontal--;

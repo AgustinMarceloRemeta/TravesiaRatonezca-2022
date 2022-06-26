@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c695de73e0e7f4589502c2d892c8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 1
+  Velocity: 2
   ActualVertical: 0
   ActualHorizontal: -1
   NewX: -3.1
@@ -2990,6 +2990,10 @@ PrefabInstance:
       value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
+      propertyPath: Velocity
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: ActualHorizontal
       value: 1
       objectReference: {fileID: 0}
@@ -3062,6 +3066,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
+      propertyPath: Velocity
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
       value: Rock
