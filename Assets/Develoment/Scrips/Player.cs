@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] float NewX, NewZ;
     [SerializeField] List<Position> ExPositions;
     public bool IsPlayer;
-    public static Action  SavePos;
+    public static Action  SavePos, AddMovs;
     protected GridManager gridManager;
     bool Change;
     Animator Anim;
@@ -75,7 +75,10 @@ public class Player : MonoBehaviour
                 if (!item.occupied)
                 {
                     Limits();
-                    if (IsPlayer) SavePos?.Invoke();
+                    if (IsPlayer) {
+                        SavePos?.Invoke();
+                        AddMovs?.Invoke();
+                            }
                     NewX = item.position.x;
                     NewZ = item.position.z;
                     ActualHorizontal = NewHorizontal;
@@ -153,6 +156,7 @@ public class Player : MonoBehaviour
         }
         return new Position(ActualVertical, ActualHorizontal);
     }
+
    public virtual void ReturnToPastPosition()
     {
         var NewPosition = GetPosition();

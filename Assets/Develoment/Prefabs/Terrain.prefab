@@ -100,6 +100,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   Vertical: 0
   Horizontal: 0
+  Up: {fileID: 0}
 --- !u!65 &138841317001428001
 BoxCollider:
   m_ObjectHideFlags: 0

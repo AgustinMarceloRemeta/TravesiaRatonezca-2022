@@ -7,6 +7,7 @@ public class Terrain : MonoBehaviour
     public bool occupied, box;
     public Vector3 position;
     public int Vertical, Horizontal;
+    public GameObject Up;
     void Start()
     {
         position = this.transform.position;
@@ -18,7 +19,8 @@ public class Terrain : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 4f))
         {
-            if (hit.collider.GetComponent<Stone>() != null)
+            Up = hit.collider.gameObject;
+            if (hit.collider.GetComponent<Player>() != null)
             {
                 box = true;
             }

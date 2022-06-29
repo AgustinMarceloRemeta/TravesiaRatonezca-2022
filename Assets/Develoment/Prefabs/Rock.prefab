@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1756956989330675610}
   - component: {fileID: -6381065779764527541}
   - component: {fileID: 1916309988383987551}
+  - component: {fileID: 7181743011754907223}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61b24cdc2909224b904e5d24b55f844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 2
+  Velocity: 4
   ActualVertical: 0
   ActualHorizontal: 0
   NewX: 0
@@ -118,5 +119,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.59858906, y: 0.4803351, z: 0.83529776}
-  m_Center: {x: -0.01729084, y: 0.24016787, z: 0.11606582}
+  m_Size: {x: 0.59858906, y: 0.4803351, z: 0.64695203}
+  m_Center: {x: -0.017290851, y: 0.24016787, z: 0.021892827}
+--- !u!54 &7181743011754907223
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000185128997709298}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
