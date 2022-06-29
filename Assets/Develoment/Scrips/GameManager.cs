@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     {
         if (isComplete()) Win.SetActive(true);
         else Win.SetActive(false);
-        time += Time.deltaTime;
+        if(!isComplete())time += Time.deltaTime;
         textContMov.text ="Movimientos: " +CantMovs.ToString();
         textTime.text ="Tiempo: " + time.ToString("00");
     }
@@ -48,8 +48,14 @@ public class GameManager : MonoBehaviour
         int ActiveScene = SceneManager.GetActiveScene().buildIndex;
         if (ActiveScene+1 > PlayerPrefs.GetInt("Levels", 0)) 
         PlayerPrefs.SetInt("Levels", ActiveScene+1);
+
+        int GetMov = PlayerPrefs.GetInt("Level" + ActiveScene.ToString() + "Mov", 0);
+        if (GetMov> CantMovs || GetMov==0)
         PlayerPrefs.SetInt("Level" + ActiveScene.ToString() + "Mov", (int)CantMovs );
-        PlayerPrefs.SetInt("Level" + ActiveScene.ToString() + "Time", (int)CantMovs );
+
+        int GetTime = PlayerPrefs.GetInt("Level" + ActiveScene.ToString() + "Time", 0) ;
+        if (GetTime > time || GetTime == 0)
+            PlayerPrefs.SetInt("Level" + ActiveScene.ToString() + "Time", (int)time );
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Reset()
