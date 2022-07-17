@@ -262,7 +262,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
@@ -2958,7 +2958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: ActualHorizontal
@@ -3357,7 +3357,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
@@ -6511,7 +6511,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
@@ -6692,7 +6692,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
@@ -6781,7 +6781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: ActualHorizontal
@@ -6870,7 +6870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name

@@ -260,6 +260,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2058701295}
     m_Modifications:
+    - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
+      propertyPath: Velocity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
       value: Rock (4)
@@ -282,15 +286,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.085578
+      value: -7.09
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.52
+      value: -6.45
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2874,7 +2878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: ActualHorizontal
@@ -3273,7 +3277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
@@ -6468,7 +6472,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
@@ -6647,6 +6651,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2058701295}
     m_Modifications:
+    - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
+      propertyPath: Velocity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
       value: Rock (5)
@@ -6734,7 +6742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: ActualHorizontal
@@ -6821,6 +6829,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2058701295}
     m_Modifications:
+    - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
+      propertyPath: Velocity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
       value: Rock
@@ -6855,11 +6867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: 6.21
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.085578
+      value: -7.1
       objectReference: {fileID: 0}
     - target: {fileID: 3446939270826471901, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7092,7 +7104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6381065779764527541, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: Velocity
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1000185128997709298, guid: edb5fcc305331454d8ee4dab848f8e70, type: 3}
       propertyPath: m_Name
