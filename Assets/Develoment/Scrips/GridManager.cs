@@ -11,13 +11,4 @@ public class GridManager : MonoBehaviour
     {
         terrains = FindObjectsOfType<Terrain>();
     }
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }

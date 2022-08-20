@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         }
         Win.SetActive(false);
     }
-
+     
     void Update()
     {
         if (isComplete()) Win.SetActive(true);
